@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>method_chain1-1.html</title>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+    var li_tags = $("ul.kami7 li");
+    li_tags.on('click',function() {
+        var rank = li_tags.index(this)+1;
+        $("#q34").append("クリックしたのは").append(rank).append("番目");
+    })
+});
+</script>
+</head>
+<body>
+<ul class="kami7">
+    <li>前田敦子</li>
+    <li>大島優子</li>
+    <li>篠田麻里子</li>
+    <li>板野友美</li>
+    <li>渡辺麻衣</li>
+    <li>高橋みなみ</li>
+    <li>小島陽菜</li>
+</ul>
+<div id="q34"></div>
+</body>
+</html>

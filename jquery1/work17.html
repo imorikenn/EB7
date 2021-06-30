@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>method_chain1-1.html</title>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<style>
+    .akb{
+        color: red;
+    }
+</style>
+<script>
+$(function(){
+    $("#btn").on("click",function(){
+        $("#q17").addClass("akb");
+    })  
+});
+</script>
+</head>
+<body>
+<button id="btn">クリック</button>
+<ul id="q17">
+    <li>前田敦子</li>
+    <li>大島優子</li>
+    <li>高橋みなみ</li>
+</ul>
+</body>
+</html>

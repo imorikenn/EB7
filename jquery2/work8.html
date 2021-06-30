@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>method_chain1-1.html</title>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+    $("#q38").on("change",function(){
+        var Ename = $("#q38").val();
+        var name = $("option:selected").html();
+        $("#q38_answer").html(Ename).append(":").append(name);
+    })
+});
+</script>
+</head>
+<body>
+<div>
+    <select id="q38">
+        <option value="maeda">前田敦子</option>
+        <option value="oshima">大島優子</option>
+        <option value="watanabe">渡辺麻衣</option>
+    </select>
+</div>
+<div id="q38_answer"></div>
+</body>
+</html>

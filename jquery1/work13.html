@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>method_chain1-1.html</title>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+    $("#btn").on("click",function(){
+        $("#q13>li").before("<li>前田敦子</li>").after("<li>篠田麻里子</li>");
+    })  
+});
+</script>
+</head>
+<body>
+<button id="btn">クリック</button>
+<ul id="q13">
+    <li>大島優子</li>
+</ul>
+</body>
+</html>
